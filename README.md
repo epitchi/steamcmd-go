@@ -1,6 +1,6 @@
 # Steam CMD
 - Integrate SteamCMD into daemon as module.
-- Help you guy
+- Run every 12 hours to checking new game approve
 
 # Usage
 

@@ -1,5 +1,7 @@
 github.com/UserExistsError/conpty v0.1.1 h1:cHDsU/XeoeDAQmVvCTV53SrXLG39YJ4++Pp3iAi1gXE=
 github.com/UserExistsError/conpty v0.1.1/go.mod h1:PDglKIkX3O/2xVk0MV9a6bCWxRmPVfxqZoTG/5sSd9I=
+github.com/jensvandewiel/gosteamcmd v0.1.2 h1:NHichoj0v3GvSVN2Fn36dSOLosHAytpaKnLnDHTMQPI=
+github.com/jensvandewiel/gosteamcmd v0.1.2/go.mod h1:Y7hP+iXFIOs8II68VrbdR+W1wwpB8LXYe9lfgjyTLIw=
 golang.org/x/sys v0.8.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.13.0 h1:Af8nKPmuFypiUBjVoU9V20FiaFXOcuZI21p0ycVYYGE=
 golang.org/x/sys v0.13.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=

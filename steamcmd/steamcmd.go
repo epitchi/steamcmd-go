@@ -1,7 +1,7 @@
-package gosteamcmd
+package steamcmd
 
 import (
-	"github.com/jensvandewiel/gosteamcmd/console"
+	"github.com/epitchi/steamcmd/console"
 	"io"
 )
 

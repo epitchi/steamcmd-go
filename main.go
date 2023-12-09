@@ -33,11 +33,15 @@ func main() {
 		fmt.Println(p)
 		foundSteamApp := findSteamInfo(p.Name)
 		if foundSteamApp != nil {
-			fmt.Println(foundSteamApp)
-			result := steamcmd.SteamCmdExec(268910, "Cuphead", "USER_NAME", "PASSWORD")
+			result := steamcmd.SteamCmdExec(
+				foundSteamApp.AppId, 
+				strings.Replace(foundSteamApp.AppName, " ", "_", -1), 
+				foundSteamApp.Username, 
+				foundSteamApp.Password,
+			)
 			
 			if result != nil {
-				zipfolder.ZipFile(result.SourceDir, "/Games" + result.SteamName)
+				zipfolder.ZipFile(result.SourceDir, "Games/" + result.SteamName)
 			}
 
 			port := flag.Int("port", 8080, "Port to listen on")
@@ -72,7 +76,7 @@ func findSteamInfo(targetAppName string) *SteamConfig {
 	}
 
 	for _, p := range config {
-		if strings.Replace(p.AppName, " ", "_", -1) == targetAppName {
+		if p.AppName == targetAppName {
 			return &p
 		}
 	}

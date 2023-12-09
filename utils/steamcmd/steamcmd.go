@@ -1,4 +1,4 @@
-package utils
+package steamcmd
 
 import (
 	"os"

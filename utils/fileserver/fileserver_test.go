@@ -16,7 +16,7 @@ func TestFileServer(t *testing.T) {
 
 	// Test the StartServer function
 	port := 8080
-	go func() {
+	go func() {	
 		err := StartServer(port, "./Cuphead.zip")
 		if err != nil {
 			t.Errorf("Error starting the server: %v", err)
